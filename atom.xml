@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-10-09T09:30:46.086Z</updated>
+  <updated>2017-10-10T10:01:46.279Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,58 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>正式开始吧</title>
+    <title>ceshi</title>
+    <link href="http://yoursite.com/2017/10/10/ceshi/"/>
+    <id>http://yoursite.com/2017/10/10/ceshi/</id>
+    <published>2017-10-10T09:55:57.000Z</published>
+    <updated>2017-10-10T10:01:46.279Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">天昏地暗雨磅礴,</div><div class="line">万里无云风雨声.</div><div class="line">草木摇摆身坚挺,</div><div class="line">只因心中一盏灯.</div></pre></td></tr></table></figure><blockquote><p>哈哈,其实我是一个被所有其他科目耽误的文学家…</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/di
+      
+    
+    </summary>
+    
+    
+      <category term="待定" scheme="http://yoursite.com/tags/%E5%BE%85%E5%AE%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nse4</title>
+    <link href="http://yoursite.com/2017/10/10/Nse4/"/>
+    <id>http://yoursite.com/2017/10/10/Nse4/</id>
+    <published>2017-10-10T09:52:06.000Z</published>
+    <updated>2017-10-10T09:55:24.969Z</updated>
+    
+    <content type="html"><![CDATA[<p>##<strong>“软件工程(C编码实践篇)”实验报告</strong></p><h3 id="实验三：内部模块化的命令行菜单小程序V2-0"><a href="#实验三：内部模块化的命令行菜单小程序V2-0" class="headerlink" title="实验三：内部模块化的命令行菜单小程序V2.0"></a>实验三：内部模块化的命令行菜单小程序V2.0</h3><p>网易云课堂昵称：镍铬合金</p><p>软件工程（C编码实践篇）》MOOC课程作业<a href="http://mooc.study.163.com/course/USTC-1000002006" target="_blank" rel="external">http://mooc.study.163.com/course/USTC-1000002006</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;##&lt;strong&gt;“软件工程(C编码实践篇)”实验报告&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;实验三：内部模块化的命令行菜单小程序V2-0&quot;&gt;&lt;a href=&quot;#实验三：内部模块化的命令行菜单小程序V2-0&quot; class=&quot;headerlink&quot; title=&quot;实验三
+      
+    
+    </summary>
+    
+    
+      <category term="高软实验报告" scheme="http://yoursite.com/tags/%E9%AB%98%E8%BD%AF%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>分别用c++, java,和python简单的实现HelloWorld.</title>
     <link href="http://yoursite.com/2017/10/08/%E6%AD%A3%E5%BC%8F%E5%BC%80%E5%A7%8B%E5%90%A7/"/>
     <id>http://yoursite.com/2017/10/08/正式开始吧/</id>
     <published>2017-10-08T14:00:23.000Z</published>
-    <updated>2017-10-09T09:30:46.086Z</updated>
+    <updated>2017-10-10T09:38:11.836Z</updated>
     
     <content type="html"><![CDATA[<h2 id="搭建完博客有本个月了-一直懒的写。因为自己文学方面有点差，不知道去写啥，从何开始，但是这样搭建博客就没有意义了。。。万事开头难，我相信，坚持下去，一定会有收获的，嗯，那就开始吧"><a href="#搭建完博客有本个月了-一直懒的写。因为自己文学方面有点差，不知道去写啥，从何开始，但是这样搭建博客就没有意义了。。。万事开头难，我相信，坚持下去，一定会有收获的，嗯，那就开始吧" class="headerlink" title=" 搭建完博客有本个月了,一直懒的写。因为自己文学方面有点差，不知道去写啥，从何开始，但是这样搭建博客就没有意义了。。。万事开头难，我相信，坚持下去，一定会有收获的，嗯，那就开始吧"></a> <strong>搭建完博客有本个月了,一直懒的写。因为自己文学方面有点差，不知道去写啥，从何开始，但是这样搭建博客就没有意义了。。。万事开头难，我相信，坚持下去，一定会有收获的，嗯，那就开始吧</strong></h2><blockquote><p><em>我是个半路出家的菜鸟,跨行来到程序世界,懵懵懂懂,还有很多地方要去学习,这个地方就用自己目前刚开始学习的三种语言分别来实现一下helloworld吧,哈哈!</em></p></blockquote><ul><li>c++</li><li>java</li><li>python</li></ul><p>这三个语言都学得很浅,仅限于能写Helloworld的水平<br><a id="more"></a></p><ul><li>c++</li></ul><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line"><span class="function"></span>&#123;</div><div class="line"><span class="built_in">cout</span> &lt;&lt; <span class="string">"helloworld"</span> &lt;&lt; <span class="built_in">endl</span>; </div><div class="line"><span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>具体代码截图如下:<br><img src="https://i.imgur.com/dH3Kjnx.jpg" alt=""></p><p>运行结果如下:<br><img src="https://i.imgur.com/f6ZUycw.jpg" alt=""></p><ul><li>java</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">System.out.println(<span class="string">"helloworld"</span>);</div><div class="line"><span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>具体代码截图如下:<br><img src="https://i.imgur.com/bN4JkhZ.jpg" alt=""></p><p>运行结果如下:<br><img src="https://i.imgur.com/ZVn0cjp.jpg" alt=""></p><ul><li>python</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">print</span> <span class="string">'helloworld'</span></div></pre></td></tr></table></figure><p>具体代码截图如下:</p><p><img src="https://i.imgur.com/gmUFRy6.jpg" alt=""></p><p>运行结果如下:</p><p><img src="https://i.imgur.com/vyjjw5d.jpg" alt=""></p><p>好啦,就是这么简洁</p><blockquote><p>对于这三种语言,据我目前了解,c++和java是编译型面向对象语言,java用的包比较多,用起来容易些,c++学好了用起来很强大。而python是一种解释型语言,语法从上面例子就可以看出来很简单,就我来看,是一种写起来简单,好理解,但是执行效率稍低的一种语言,但是目前硬件发展速度很快,性能方面的差距不明显,然而简洁易写使其很受欢迎,也是当下越来越流行的一种语言。</p></blockquote><p>OK,就写到这里吧,该睡觉了,晚安!</p>]]></content>
     
@@ -40,7 +87,7 @@
     </summary>
     
     
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -49,7 +96,7 @@
     <link href="http://yoursite.com/2017/09/23/myblog2/"/>
     <id>http://yoursite.com/2017/09/23/myblog2/</id>
     <published>2017-09-23T12:24:22.000Z</published>
-    <updated>2017-10-08T13:57:13.145Z</updated>
+    <updated>2017-10-10T09:40:31.961Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>搬运来自虎扑的一篇文章来练练手吧</p></blockquote><p><a href="https://bbs.hupu.com/20276224.html" target="_blank" rel="external">21世纪始终位于第一梯队的马刺，哪些球员算得上他的克星</a></p><h2 id="作者：神经病未见好转"><a href="#作者：神经病未见好转" class="headerlink" title="作者：神经病未见好转"></a>作者：神经病未见好转</h2><h3 id="正文开始"><a href="#正文开始" class="headerlink" title="正文开始"></a>正文开始</h3><p>进入21世纪以来，马刺每年都进入季后赛，<br>99-00赛季，马刺取得了53胜29负的战绩，马刺在季后赛第一轮以1比3不敌太阳（邓肯半月板撕裂无缘季后赛）。<br>2000-01赛季，马刺取得了58胜24负的佳绩。季后赛第一轮3比1淘汰森林狼，西部半决赛4比1淘汰小牛。西部决赛中，马刺被当时如日中天的湖人队横扫<br>2001-02赛季，马刺再次取得58胜24负的战绩，邓肯获得常规赛MVP。西部半决赛马刺以1比4不敌湖人队。<br>2002-03赛季  马刺取得了60胜22负的常规赛成绩，季后赛第一轮，马刺以4比2淘汰太阳。西部半决赛4比2淘汰老对手湖人，西部决赛4比2淘汰小牛。总决赛，马刺击败篮网，赢得第二座NBA总冠军奖杯。<br>2003-04赛季  马刺4场横扫孟菲斯灰熊队。第二轮，马刺2:4湖人队。<br>2004-05赛季，以59胜23负的战绩结束常规赛 马刺以4比1轻取丹佛掘金队，4比2击败西雅图超音速队，4比1淘汰菲尼克斯太阳队。总决赛4:3底特律活塞队<br><a id="more"></a><br>2005-06赛季，马刺得到63胜19负。季后赛首轮马刺4比2淘汰国王队。西部半决赛3:4达拉斯小牛<br>2006-07赛季，马刺58胜24负常规赛战绩进入季后赛。首轮比赛马刺4比1淘汰丹佛掘金队。马刺4-2淘汰菲尼克斯太阳队。西部决赛马刺4-1轻取犹他爵士。随后在总决赛中以4比0横扫克利夫兰骑士队<br>2007-08赛季，马刺以56胜26负的成绩以排名西部第三挺进季后赛。季后赛首轮马刺4-1淘汰菲尼克斯太阳队。次轮鏖战7场后险胜克里斯·保罗领衔的新奥尔良黄蜂队，与湖人会师西部决赛，但最终1-4遗憾结束卫冕之旅。<br>2008-09赛季，马刺以54胜28负结束常规赛。但在季后赛首轮中1-4不敌达拉斯小牛队。<br>2009-10赛季，马刺得了50胜的战绩。季后赛首轮4比2爆冷击败了西部第二的小牛队，但在第二轮惨遭菲尼克斯太阳队横扫。<br>2010-11赛季，马刺取得常规赛西部第一，总排名第二的好成绩。季后赛首轮马刺2比4不敌西部排名第八孟菲斯灰熊队<br>2011-12赛季，马刺队以50胜16负的战绩与东部的公牛队并列联盟第一。马刺连续第15次杀入季后赛；雷霆4比2淘汰马刺。<br>2012-13赛季，马刺取得58胜24负。季后赛首轮4比0横扫湖人。第二轮4-2淘汰勇士。西部决赛4-0横扫灰熊。总决赛前五场，马刺3比2领先迈阿密热火队，第六场最后7秒，雷·阿伦射中关键一球，帮助热火加时获胜，将总决赛拖进抢七局。第七场，马刺88比95不敌热火，遗憾获得亚军。<br>2013-14赛季，马刺最终以62胜20负的常规赛排名联盟第一。季后赛首轮马刺4比3淘汰小牛队。西部半决赛4比1淘汰开拓者队。西部决赛4比2淘汰雷霆队，再度与卫冕冠军热火队会师总决赛。最终马刺4比1夺冠。<br>2014-15赛季，季后赛首轮面对洛杉矶快船队，双方战至第七场，最终快船凭借保罗终场前1秒准绝杀战胜马刺。<br>2015-16赛季，马刺常规赛结束时马刺以67胜15负的战绩刷新队史记录，季后赛首轮马刺4-0淘汰灰熊，西部半决赛2-4不敌雷霆。<br>2016-17赛季，常规赛马刺取得61胜21负，首轮4比2战胜灰熊，西部半决赛4比2战胜火箭后，勇士以4-0的总比分横扫马刺。</p><p>  从季后赛成绩来看，（忽略伤病因素）东部球星由于对阵机会相对较少<br>参考意义一般。下列球员可以算得上马刺克星<br>科比</p><p>奥尼尔</p><p>杜兰特</p><p>诺维斯基</p><p>个人觉得 库里 保罗 目前来看算半个。<br>马刺克的球星就多了。</p>]]></content>
     
@@ -64,6 +111,8 @@
     </summary>
     
     
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
   </entry>
   
   <entry>
@@ -71,7 +120,7 @@
     <link href="http://yoursite.com/2017/09/23/hello-world/"/>
     <id>http://yoursite.com/2017/09/23/hello-world/</id>
     <published>2017-09-23T12:00:08.145Z</published>
-    <updated>2017-09-23T12:55:44.668Z</updated>
+    <updated>2017-10-10T09:39:53.887Z</updated>
     
     <content type="html"><![CDATA[<p>童年是最美好的，也是最令人怀念的，那时候纯洁，天真，没有烦恼，每到<br>遇到苦恼的时候，想想小时候的自己，就会感到很快了，哈哈哈！</p><h2 id="图片展示"><a href="#图片展示" class="headerlink" title="图片展示"></a>图片展示</h2><h3 id="这些年，自己也收藏了一些童年的一些图片，刚开始创建博客，就放在上面吧，没事的时候看看，很机智，嘿嘿。"><a href="#这些年，自己也收藏了一些童年的一些图片，刚开始创建博客，就放在上面吧，没事的时候看看，很机智，嘿嘿。" class="headerlink" title="这些年，自己也收藏了一些童年的一些图片，刚开始创建博客，就放在上面吧，没事的时候看看，很机智，嘿嘿。"></a>这些年，自己也收藏了一些童年的一些图片，刚开始创建博客，就放在上面吧，没事的时候看看，很机智，嘿嘿。</h3><p><a href="https://www.baidu.com/" target="_blank" rel="external">度娘是万能的，开始，先感谢一下度娘</a></p><blockquote><p>以下图片内容均来自互联网</p></blockquote><p><strong>注意，多图来袭</strong></p><p><em>精彩即将开始</em><br><a id="more"></a></p><p><img src="http://owq5oiqgs.bkt.clouddn.com/kaodigua.jpg" alt="烤地瓜"></p><p>哈哈烤地瓜很好吃，不过这也是一种技术活啊，我大学时，在家尝试，这烤地瓜的炉子总是搭不成功。。。</p><p><img src="http://owq5oiqgs.bkt.clouddn.com/dangong.jpg" alt="弹弓"><br>哈哈，小时候经常拿它打鸟，但是无奈水平太差，总是打不到。。</p><p><img src="http://owq5oiqgs.bkt.clouddn.com/dapa.jpg" alt="打趴"><br>这是我小时候玩的最嗨的游戏之一，真是怀念，接下来是之二。</p><p><img src="http://owq5oiqgs.bkt.clouddn.com/tanliuli.jpg" alt="弹琉璃"><br>这个游戏是我小时候玩的最嗨的游戏之二，最自豪的是，这俩游戏我都很厉害，哈哈哈！</p><p><img src="http://owq5oiqgs.bkt.clouddn.com/dianzi.jpg" alt="电子"><br>哈哈，大家小时候是不是都被这玩意电过，麻麻的，有的小伙伴一点都不怕，但是在一点不知情的情况下被电一次马上就会跳起来！</p><p><img src="http://owq5oiqgs.bkt.clouddn.com/youxiji.jpg" alt="游戏机"><br>古董般的掌上游戏机，记得玩得最多的就是俄罗斯方块，坦克大战和左右躲避的，好像是赛车。</p><p><img src="http://owq5oiqgs.bkt.clouddn.com/xiaoshihoudeyangzi.jpg" alt="童年的我"><br>看到这张图片，很多人都会很有感触，时间飞逝，童年一去不复返。就让这份回忆留在心中，永远记忆吧。</p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=27876900&auto=1&height=66"></iframe>]]></content>
     
@@ -87,6 +136,8 @@
     
     </summary>
     
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
