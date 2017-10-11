@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-10-10T10:18:47.699Z</updated>
+  <updated>2017-10-11T12:03:30.059Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2017/10/11/%E4%BA%BA%E7%94%9F%E8%8B%A6%E7%9F%AD,%E5%8F%8A%E6%97%B6%E8%A1%8C%E4%B9%90/"/>
+    <id>http://yoursite.com/2017/10/11/人生苦短,及时行乐/</id>
+    <published>2017-10-11T12:03:29.767Z</published>
+    <updated>2017-10-11T12:03:30.059Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="人生苦短-及时行乐"><a href="#人生苦短-及时行乐" class="headerlink" title="人生苦短,及时行乐"></a>人生苦短,及时行乐</h1><p>标签（空格分隔）： 生活</p><hr><p>ok,刚在知乎上看到了这个软件,试试怎么样,好用的话我就删掉markdown2 pad了</p><hr><p><strong>哈哈</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">print</span> <span class="string">'helloworld'</span></div></pre></td></tr></table></figure><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"happy, everyday!"</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p><em>哇,感觉不错啊!</em></p><p><a href="https://www.baidu.com" target="_blank" rel="external">度麻麻</a></p><blockquote><p>初步用了一下,非常满意,谢谢开发大佬!</p></blockquote><pre><code>这样也能写代码吗?class helloworld{    public static void main(String[] args){        System.out.println(&quot;helloworld&quot;);        return 0;    }}</code></pre><p>发布看看效果</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;人生苦短-及时行乐&quot;&gt;&lt;a href=&quot;#人生苦短-及时行乐&quot; class=&quot;headerlink&quot; title=&quot;人生苦短,及时行乐&quot;&gt;&lt;/a&gt;人生苦短,及时行乐&lt;/h1&gt;&lt;p&gt;标签（空格分隔）： 生活&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;ok,刚在知乎上看到了这个软件,试
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>ceshi</title>
