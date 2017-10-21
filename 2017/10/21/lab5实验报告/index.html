@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://i.imgur.com/5KWhnjU.jpg">
 <meta property="og:image" content="https://i.imgur.com/AJw91EW.jpg">
 <meta property="og:image" content="https://i.imgur.com/Bgl8NMu.jpg">
-<meta property="og:updated_time" content="2017-10-21T16:13:21.608Z">
+<meta property="og:updated_time" content="2017-10-21T16:15:37.351Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="高软实验报告5">
 <meta name="twitter:description" content="网易云课堂昵称: 镍铬合金 学号:sa17225259 github: https://github.com/Niejinge/NSE  《软件工程（C编码实践篇）》MOOC课程作业http://mooc.study.163.com/course/USTC-1000002006 】   实验要求  给lab5-1.tar.gz找bug，quit命令无法运行的bug 利用callback函数参数使">
@@ -210,14 +210,66 @@
 <p>　首先下载老师的代码并运行，发现quit命令不能识别，如下图所示：<br><img src="https://i.imgur.com/3mPDbpK.jpg" alt=""></p>
 </li>
 </ul>
-<p>　 经过分析，发现在inktable.c中SearchLinkTableNode函数中有错误，while循环中最后一次循环到pLinkTable-&gt;ptail就终止了，因此quit作为最后一条命令不能识别。修改为NULL，就可以了，修改后代码如下：<br>    tLinkTableNode <em> SearchLinkTableNode(tLinkTable </em>pLinkTable, int Conditon(tLinkTableNode <em> pNode, void</em> args), void<em> args)<br>    {<br>        if(pLinkTable == NULL || Conditon == NULL)<br>        {<br>            return NULL;<br>        }<br>        tLinkTableNode </em> pNode = pLinkTable-&gt;pHead;<br>        while(pNode != NULL)<br>        {<br>            if(Conditon(pNode, args) == SUCCESS)<br>            {<br>                return pNode;<br>            }<br>            pNode = pNode-&gt;pNext;<br>        }<br>        return NULL;<br>    }<br>再运行程序，错误消失：<br><img src="https://i.imgur.com/5KWhnjU.jpg" alt=""></p>
+<p>　 经过分析，发现在inktable.c中SearchLinkTableNode函数中有错误，while循环中最后一次循环到pLinkTable-&gt;ptail就终止了，因此quit作为最后一条命令不能识别。修改为NULL，就可以了，修改后代码如下：</p>
+<pre><code>tLinkTableNode * SearchLinkTableNode(tLinkTable *pLinkTable, int Conditon(tLinkTableNode * pNode, void* args), void* args)
+{
+    if(pLinkTable == NULL || Conditon == NULL)
+    {
+        return NULL;
+    }
+    tLinkTableNode * pNode = pLinkTable-&gt;pHead;
+    while(pNode != NULL)
+    {    
+        if(Conditon(pNode, args) == SUCCESS)
+        {
+            return pNode;                    
+        }
+        pNode = pNode-&gt;pNext;
+    }
+    return NULL;
+}
+</code></pre><p>再运行程序，错误消失：<br><img src="https://i.imgur.com/5KWhnjU.jpg" alt=""></p>
 <ul>
 <li>使用<code>callback</code>优化代码</li>
 </ul>
-<p>　 对于    callback,就是被调用函数还要利用调用者提供信息，来完成函数的实现。现在我们就来对我们的代码完成优化，通过引入callback来对代码进行修改，以降低代码的耦合程度。<br>　 之前的代码中，在menu.c中，<code>char cmd[CMD_MAX_LEN];</code>作为全局变量出现在main函数体外，这虽然实现了我们的目的，但是使用全局变量是不好的，这会无形之间增加代码之间的耦合程度。所以，我们要通过引入callback来降低耦合，使我们的代码更加完美。<br>为了实现我们的目的，通过在<code>SearchCondition</code>中引入args参数，可以实现把cmd的声明放在main函数体内，具体代码如下：<br>    int SearchCondition(tLinkTableNode <em> pLinkTableNode, void</em> args)<br>    {<br>        char <em> cmd = (char</em>) args;<br>        tDataNode <em> pNode = (tDataNode </em>)pLinkTableNode;<br>        if(strcmp(pNode-&gt;cmd, cmd) == 0)<br>        {<br>            return  SUCCESS;<br>        }<br>        return FAILURE;<br>    }<br>这里修改之后，相关地方都需要修改，总共需要修改的地方还有：<br>    tDataNode<em> FindCmd(tLinkTable </em> head, char <em> cmd)<br>    {<br>        return  (tDataNode</em>)SearchLinkTableNode(head,SearchCondition, cmd);<br>    }</p>
-<p>linktable.h和linktable.c中相关代码也需要修改：具体修改就不一一赘述了。</p>
-<p>linktable.h:<br>    tLinkTableNode <em> SearchLinkTableNode(tLinkTable </em>pLinkTable, int Conditon(tLinkTableNode <em> pNode, void</em> args), void<em> args);<br>linktable.c:<br>    tLinkTableNode </em> SearchLinkTableNode(tLinkTable <em>pLinkTable, int Conditon(tLinkTableNode </em> pNode, void<em> args), void</em> args)<br>    {<br>        if(pLinkTable == NULL || Conditon == NULL)<br>        {<br>            return NULL;<br>        }<br>        tLinkTableNode * pNode = pLinkTable-&gt;pHead;<br>        while(pNode != NULL)<br>        {<br>            if(Conditon(pNode, args) == SUCCESS)<br>            {<br>                return pNode;<br>            }<br>            pNode = pNode-&gt;pNext;<br>        }<br>        return NULL;<br>    }</p>
-<ul>
+<p>　 对于    callback,就是被调用函数还要利用调用者提供信息，来完成函数的实现。现在我们就来对我们的代码完成优化，通过引入callback来对代码进行修改，以降低代码的耦合程度。<br>　 之前的代码中，在menu.c中，<code>char cmd[CMD_MAX_LEN];</code>作为全局变量出现在main函数体外，这虽然实现了我们的目的，但是使用全局变量是不好的，这会无形之间增加代码之间的耦合程度。所以，我们要通过引入callback来降低耦合，使我们的代码更加完美。<br>为了实现我们的目的，通过在<code>SearchCondition</code>中引入args参数，可以实现把cmd的声明放在main函数体内，具体代码如下：</p>
+<pre><code>int SearchCondition(tLinkTableNode * pLinkTableNode, void* args)
+{
+    char * cmd = (char*) args;
+    tDataNode * pNode = (tDataNode *)pLinkTableNode;
+    if(strcmp(pNode-&gt;cmd, cmd) == 0)
+    {
+        return  SUCCESS;  
+    }
+    return FAILURE;           
+}
+</code></pre><p>这里修改之后，相关地方都需要修改，总共需要修改的地方还有：</p>
+<pre><code>tDataNode* FindCmd(tLinkTable * head, char * cmd)
+{
+    return  (tDataNode*)SearchLinkTableNode(head,SearchCondition, cmd);
+}
+</code></pre><p>linktable.h和linktable.c中相关代码也需要修改：具体修改就不一一赘述了。</p>
+<p>linktable.h:</p>
+<pre><code>tLinkTableNode * SearchLinkTableNode(tLinkTable *pLinkTable, int Conditon(tLinkTableNode * pNode, void* args), void* args);
+</code></pre><p>linktable.c:</p>
+<pre><code>tLinkTableNode * SearchLinkTableNode(tLinkTable *pLinkTable, int Conditon(tLinkTableNode * pNode, void* args), void* args)
+{
+    if(pLinkTable == NULL || Conditon == NULL)
+    {
+        return NULL;
+    }
+    tLinkTableNode * pNode = pLinkTable-&gt;pHead;
+    while(pNode != NULL)
+    {    
+        if(Conditon(pNode, args) == SUCCESS)
+        {
+            return pNode;                    
+        }
+        pNode = pNode-&gt;pNext;
+    }
+    return NULL;
+}
+</code></pre><ul>
 <li>实现代码的隐藏<br>　 通过把头文件中数据结构的定义移到.c文件中，而在头文件仅实现结构的定义，就实现了代码的隐藏，只提供接口，提高了代码的健壮性。</li>
 </ul>
 <blockquote>
