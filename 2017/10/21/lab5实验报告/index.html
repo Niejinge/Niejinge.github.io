@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://i.imgur.com/5KWhnjU.jpg">
 <meta property="og:image" content="https://i.imgur.com/AJw91EW.jpg">
 <meta property="og:image" content="https://i.imgur.com/Bgl8NMu.jpg">
-<meta property="og:updated_time" content="2017-10-21T16:15:37.351Z">
+<meta property="og:updated_time" content="2017-10-21T16:24:18.135Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="高软实验报告5">
 <meta name="twitter:description" content="网易云课堂昵称: 镍铬合金 学号:sa17225259 github: https://github.com/Niejinge/NSE  《软件工程（C编码实践篇）》MOOC课程作业http://mooc.study.163.com/course/USTC-1000002006 】   实验要求  给lab5-1.tar.gz找bug，quit命令无法运行的bug 利用callback函数参数使">
@@ -210,7 +210,7 @@
 <p>　首先下载老师的代码并运行，发现quit命令不能识别，如下图所示：<br><img src="https://i.imgur.com/3mPDbpK.jpg" alt=""></p>
 </li>
 </ul>
-<p>　 经过分析，发现在inktable.c中SearchLinkTableNode函数中有错误，while循环中最后一次循环到pLinkTable-&gt;ptail就终止了，因此quit作为最后一条命令不能识别。修改为NULL，就可以了，修改后代码如下：</p>
+<p>　 经过分析，发现在<code>inktable.c</code>中<code>SearchLinkTableNode</code>函数中有错误，while循环中最后一次循环到<code>pLinkTable-&gt;ptail</code>就终止了，因此quit作为最后一条命令不能识别。修改为NULL，就可以了，修改后代码如下：</p>
 <pre><code>tLinkTableNode * SearchLinkTableNode(tLinkTable *pLinkTable, int Conditon(tLinkTableNode * pNode, void* args), void* args)
 {
     if(pLinkTable == NULL || Conditon == NULL)
@@ -511,11 +511,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">生活</a>
+                <a href="javascript:void(0)" class="js-tag color2">高软实验报告</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">高软实验报告</a>
+                <a href="javascript:void(0)" class="js-tag color3">生活</a>
               </li>
              
               <li class="article-tag-list-item">
