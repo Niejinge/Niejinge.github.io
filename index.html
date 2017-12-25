@@ -294,57 +294,18 @@
 
       
         
-          
-            <script src="\assets\js\APlayer.min.js"> </script><blockquote>
+          <blockquote>
 <p>最近系统的学习了一下git, 虽然只是了解了最基本的用法,再此还是记录一下, 以备以后忘记查阅,学习教程来自<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" title="Git教程" target="_blank" rel="external">https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000</a>,感谢廖老师.</p>
 </blockquote>
 <p>Git是目前世界上最先进的分布式版本控制系统,对于我们编写代码的保存,分享都特别有用,可以说是程序员必须要掌握的技能,下面就总结一下在git常用操作.</p>
-<hr>
-<ul>
-<li>本地仓库的建立与初始化等操作</li>
-</ul>
-<p>初始化仓库:<code>git init</code>;</p>
-<p>把文件添加到仓库:<code>git add file</code> file是你要提交的文件名;</p>
-<p>把文件提交到仓库:<code>git commit -m &quot;描述语言&quot;</code> “”里面的内容是对你此次提交的描述,以便于以后查看;</p>
-<p>可以用<code>git status</code>查看工作区的情况,平时可以多用这个命令看看自己的仓库状态;</p>
-<p>git容许我们在版本之间穿梭, 使用命令<code>git reset --hard commit_id</code>　 穿梭前,可以用<code>git log</code>查看提交历史;</p>
-<p>初始化的文件夹就相当于一个工作区, 里面的内容用git add之后文件便被存到暂存区, 然后才可以进行commit操作;</p>
-<p>当你该乱了工作区某个文件的内容,想直接丢弃工作取得修改时, 用命令    <code>git checkout -- file</code>,　 当你不但该乱了工作区的某个文件的内容, 还添加到了暂存区时, 想丢弃修改, 可以先用<code>git reset HEAD file</code>, 然后再进行上一步操作即可;</p>
-<p>关联远程库: <code>git remote add origin git@server-name:path/repo-name.git</code>;</p>
-<p>关联后, 使用<code>git push -u origin master</code>第一次推送master分支的所有内容, 此后就可以用<code>git push origin master</code>推送修改;</p>
-<ul>
-<li>分支操作<blockquote>
-<p>几乎所有的版本控制系统都以某种形式支持分支。 使用分支意味着你可以把你的工作从开发主线上分离开来，以免影响开发主线。有人把 Git 的分支模型称为它的`‘必杀技特性’’，也正因为这一特性，使得 Git 从众多版本控制系统中脱颖而出。 为何 Git 的分支模型如此出众呢？ Git 处理分支的方式可谓是难以置信的轻量，创建新分支这一操作几乎能在瞬间完成，并且在不同分支之间的切换操作也是一样便捷。</p>
-</blockquote>
-</li>
-</ul>
-<p>查看分支: <code>git branch</code>;</p>
-<p>创建分支: <code>git branch name</code>, name是要创建的分支名;</p>
-<p>切换分支: <code>git checkout name</code>, name是要切换到的分支名;</p>
-<p>创建+切换分支: <code>git checkout -b name</code>;</p>
-<p>合并某分支到当前分支: <code>git merge name</code>: 这步操作很有用,比如把dev分支的内容合并到主分支上,然后在主分支上进行向远程仓库的推送;</p>
-<p>删除分支: <code>git branch -d name</code>;</p>
-<p>可以用<code>git log --graph</code>查看分支合并图;</p>
-<p>修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；</p>
-<p>当手头工作没有完成时，先把工作现场<code>git stash</code>一下，然后去修复bug，修复后，再<code>git stash pop</code>，回到工作现场;</p>
-<p>当进行新的开发时,最好新建一个分支, 如果要丢弃一个并没有被合并过的分支, 可以通过<code>git branch -D name</code>进行强制删除(注意D大写);</p>
-<p>查看远程库信息:<code>git remote -v</code>;</p>
-<p>从本地分支推送: <code>git push origin branch-name</code>, 如果推送失败, 先用<code>git pull</code>抓取远程的新提交, 然后处理冲突后再提交;</p>
-<ul>
-<li>标签相关操作<blockquote>
-<p>发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。</p>
-</blockquote>
-</li>
-</ul>
-<p>创建一个标签:<code>git tag name</code>, 默认为HEAD, 也可以指定一个commit id;</p>
-<p>指定标签信息: <code>git tag -a tagname -m &quot;blablabla...&quot;</code>;</p>
-<p>查看所有标签: <code>git tag</code>;</p>
-<p>推送一个本地标签: <code>git push origin tagname</code>, <code>git push origin --tags</code>可以推送全部本地标签;</p>
-<p>删除一个远程标签: <code>git push origin :refs/tags/tagname</code></p>
-<hr>
-<p>在gitHub上,可以fork热门的开源仓库,并对其进行贡献自己的代码,<br>把fork到自己仓库的代码可以使用<code>git clone</code>下载到本地进行修改,然后推送到自己的代码库,<br>之后就可以使用<code>pull request</code>给官方仓库来进行贡献,如果你的代码确实有用,可能就会被官方采纳, 并修改至官方库.</p>
-
-          
+<h2 id=""><a href="#" class="headerlink" title=""></a>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/25/git学习总结/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
